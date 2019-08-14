@@ -1,11 +1,12 @@
 
 <div class="search-section">
-	<form action="http://localhost:8002/keywords/index.php/keywords/search_keyword" method="POST">
+	<div class="new-keyword-section">
+		<form action="http://localhost:8002/keywords/index.php/keywords/search_keyword" method="POST">
 
-	<label for="title">Type a keyword: </label>
-	    <input type="input" name="searchTerm" /><br />
+		    <input type="input" name="searchTerm" required placeholder="type a keyword to search." /><br />
 
-	    <input type="submit" name="submit" value="Search" />
+		    <input type="submit" name="submit" value="Search" required placeholder="type any term here" />
 
-	</form>	
+		</form>			
+	</div>
 </div>

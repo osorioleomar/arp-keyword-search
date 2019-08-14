@@ -1,6 +1,6 @@
 
 
-<div style="color:red"><?php echo validation_errors(); ?></div>
+<div style="color:red; width: 100%; text-align: center;margin-top: 30px;"><?php echo validation_errors(); ?></div>
 
 <div class="new-keyword-section">
 

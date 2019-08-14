@@ -12,11 +12,13 @@ class Keywords extends CI_Controller{
 
 	public function index(){
 
+		$this->load->view('header');
 		$this->load->view('search');
 	}
 
 	public function search(){
 
+		$this->load->view('header');
 		$this->load->view('search');
 	}
 
@@ -70,6 +72,7 @@ class Keywords extends CI_Controller{
 			$data['parents'] = $this->keywords_model->get_parent();
 			$data['report_types'] = $this->keywords_model->get_report_type();
 
+			$this->load->view('header');
 			$this->load->view('new-keyword',$data);
 
 		}else{
