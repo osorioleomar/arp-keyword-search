@@ -9,7 +9,7 @@
 	<form action="http://localhost:8002/keywords/index.php/keywords/add_keyword" method="POST">
 
 	    <label for="keyword">Keyword</label>
-	    <input required type="input" name="keyword" /><br />
+	    <input required type="input" name="keyword" value=<?php echo set_value('searchTerm'); ?> /><br />
 
 	    <label for="language">Language</label>
 	    <select required name="language">
